@@ -9,9 +9,7 @@ done = False
 while not done:
 # Clear the event queue
     for event in pygame.event.get():
-
         if event.type == pygame.QUIT:
-
             pygame.quit()
     pygame.draw.rect(screen,(255,0,00),pygame.Rect(100,100,50,100),20)
     pygame.draw.circle(screen,(100,100,100),(300, 300), 50)
