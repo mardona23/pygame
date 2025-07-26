@@ -29,14 +29,14 @@ def main():
         y = min(max(0, y), sprite_height - sprite_height)
         if x == 0: current_color = colors['orange']
         elif x == screen_width - sprite_width: current_color = colors['yellow']
-        elif y == sprite_height - sprite_height:
+        elif y == screen_heigth - sprite_height:
             current_color = colors['green']
         else:
-            current_color = colors['white']
+            current_color = colors['red']
             screen.fill((0, 0, 0))
         pygame.draw.rect(screen, current_color,(x, y, sprite_width, sprite_height))
         pygame.display.flip()
         clock.tick(90)
-        pygame.quit()
+    pygame.quit()
 if __name__ == "__main__":
     main()
